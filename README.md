@@ -24,7 +24,7 @@
 - Install Environment Dependencies
 ```
 pip3 install -r requirements.txt
-````
+```
 
 - Goes to app.py then right click and then "Run python file in terminal"
 - Access on 127.0.0.1:5000
