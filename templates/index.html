@@ -16,10 +16,24 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="Sepal_Length" placeholder="Sepal_Length" required="required" />
-        <input type="text" name="Sepal_Width" placeholder="Sepal_Width" required="required" />
-		<input type="text" name="Petal_Length" placeholder="Petal_Length" required="required" />
-		<input type="text" name="Petal_Width" placeholder="Petal_Width" required="required" />
+    	<input type="text" name="rectal_temp" placeholder="rectal_temp" required="required" />
+        <input type="text" name="pulse" placeholder="pulse" required="required" />
+		<input type="text" name="respiratory_rate" placeholder="respiratory_rate" required="required" />
+		<input type="text" name="packed_cell_volume" placeholder="packed_cell_volume" required="required" />
+
+    <input type="text" name="total_protein" placeholder="total_protein" required="required" />
+    <input type="text" name="surgery_no" placeholder="surgery_no" required="required" />
+    <input type="text" name="surgery_yes" placeholder="surgery_yes" required="required" />
+    <input type="text" name="age_adult" placeholder="age_adult" required="required" />
+    <input type="text" name="age_young" placeholder="age_young" required="required" />
+    <input type="text" name="abdominal_distention_moderate" placeholder="abdominal_distention_moderate" required="required" />
+    <input type="text" name="abdominal_distention_none" placeholder="abdominal_distention_none" required="required" />
+    <input type="text" name="abdominal_distention_severe" placeholder="abdominal_distention_severe" required="required" />
+    <input type="text" name="abdominal_distention_slight" placeholder="abdominal_distention_slight" required="required" />
+
+    <input type="text" name="peripheral_pulse_increased" placeholder="peripheral_pulse_increased" required="required" />
+    <input type="text" name="peripheral_pulse_normal" placeholder="peripheral_pulse_normal" required="required" />
+    <input type="text" name="peripheral_pulse_reduced" placeholder="peripheral_pulse_reduced" required="required" />
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
