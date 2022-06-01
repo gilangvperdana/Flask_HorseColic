@@ -4,6 +4,10 @@
 - Macine Learning Method : Naivi Bayes
 - Model Machine Learning : Pickle
 
+## Environment
+- Python 3.8.10
+- Flask 2.1.2
+
 ## Anggota 
 - Gilang Virga Perdana - 1101190108
 - Firdaus Adinegoro - 1101190231
