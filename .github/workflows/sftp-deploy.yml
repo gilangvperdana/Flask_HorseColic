@@ -20,8 +20,9 @@ jobs:
         uses: wlixcc/SFTP-Deploy-Action@v1.0
         with:
           username: ${{ secrets.SFTP_USERNAME }}
-          password: ${{ secrets.SFTP_PASSWORD }}
+          ssh_private_key: ${{ secrets.SSH_PRIVATE_KEY }}
           server: ${{ secrets.SFTP_SERVER }}
+          port: ${{ secrets.SFTP_PORT }}
           local_path: './*'
           remote_path: '/root/Flask_HorseColic/flask/'
           args: '-o ConnectTimeout=10'
