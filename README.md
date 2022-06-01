@@ -33,3 +33,7 @@ pip3 install -r requirements.txt
 - [Dataset](https://www.kaggle.com/datasets/uciml/horse-colic)
 - [Coding](https://colab.research.google.com/drive/1rtDZPfhtMNU-9lIKrOgze7bgRz2WU-OG?usp=sharing)
 - [Drive](https://drive.google.com/drive/folders/1XkYME2wrosscOy9voV-EYU-fopJU8czI?usp=sharing)
+
+## Reference
+- [YouTube](https://www.youtube.com/watch?v=MxJnR1DMmsY&ab_channel=StatsWire)
+- [Source Code](https://github.com/siddiquiamir/ML-MODEL-DEPLOYMENT-USING-FLASK)
