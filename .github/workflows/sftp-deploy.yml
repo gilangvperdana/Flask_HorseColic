@@ -24,5 +24,5 @@ jobs:
           server: ${{ secrets.SFTP_SERVER }}
           port: ${{ secrets.SFTP_PORT }}
           local_path: './*'
-          remote_path: '/root/Flask_HorseColic/flask/'
+          remote_path: '/root/Flask_HorseColic/'
           args: '-o ConnectTimeout=10'
