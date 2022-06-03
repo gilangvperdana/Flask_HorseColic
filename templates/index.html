@@ -16,34 +16,22 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-      <input type="text" name="surgery" placeholder="Surgery" required="required" />
-      <input type="text" name="age" placeholder="Age" required="required" />
-      <input type="text" placeholder="Hospital Number" name="hospital_number" required="required" />
-      <input type="text" placeholder="Rectal Temperature" name="rectal_temp" required="required" />
-      <input type="text" placeholder="Pulse" name="pulse" required="required" />
-      <input type="text" placeholder="Respiratory Rate" name="respiratory_rate" required="required" />
-      <input type="text" placeholder="Temp of Extremities" name="temp_of_extremities" required="required" />
-      <input type="text" placeholder="Peripheral Pulse" name="peripheral_pulse" required="required" />
-      <input type="text" placeholder="Mucos Membrane" name="mucous_membrane" required="required" />
-      <input type="text" placeholder="Capillary Refill Time" name="capillary_refill_time" required="required" />
-      <input type="text" placeholder="Pain" name="pain" required="required" />
-      <input type="text" placeholder="Peristalsis" name="peristalsis" required="required" />
-      <input type="text" placeholder="Abdominal Distention" name="abdominal_distention" required="required" />
-      <input type="text" placeholder="Nasogastric Tube" name="nasogastric_tube" required="required" />
-      <input type="text" placeholder="Nasogastric Reflux" name="nasogastric_reflux" required="required" />
-      <input type="text" placeholder="Nasogastric Reflux PH" name="nasogastric_reflux_ph" required="required" />
-      <input type="text" placeholder="Rectal Exam Feces" name="rectal_exam_feces" required="required" />
-      <input type="text" placeholder="Abdomen" name="abdomen" required="required" />
-      <input type="text" placeholder="Packed Cell Volume" name="packed_cell_volume" required="required" />
-      <input type="text" placeholder="Total Protein" name="total_protein" required="required" />
-      <input type="text" placeholder="Abdomo Appearance" name="abdomo_appearance" required="required" />
-      <input type="text" placeholder="Abdomo Protein" name="abdomo_protein" required="required" />
-      <input type="text" placeholder="Surgical Lesion" name="surgical_lesion" required="required" />
-      <input type="text" placeholder="Lesion 1" name="lesion_1" required="required" />
-      <input type="text" placeholder="Lesion 2" name="lesion_2" required="required" />
-      <input type="text" placeholder="Lesion 3" name="lesion_3" required="required" />
-      <input type="text" placeholder="CP Data" name="cp_data" required="required" />
-
+      <input type="float" placeholder="Rectal Temp" name="rectal_temp" required="required" />
+      <input type="float" placeholder="Pulse" placeholder="pulse" required="required" />
+      <input type="float" placeholder="Respiratory Rate" name="respiratory_rate" required="required" />
+      <input type="float" placeholder="Packed Cell Volume" name="packed_cell_volume" required="required" />
+      <input type="float" placeholder="Total Protein" name="total_protein" required="required" />
+      <input type="float" placeholder="Surgery No" name="surgery_no" />
+      <input type="float" placeholder="Surgery Yes" name="surgery_yes" />
+      <input type="float" placeholder="Age Adult" name="age_adult"/>
+      <input type="float" placeholder="Age Young" name="age_young" />
+      <input type="float" placeholder="Abdominal Distention Moderate" name="abdominal_distention_moderate" />
+      <input type="float" placeholder="Abdominal Distention None" name="abdominal_distention_none" />
+      <input type="float" placeholder="Abdominal Distention Severe" name="abdominal_distention_severe" />
+      <input type="float" placeholder="Abdominal Distention Slight" name="abdominal_distention_slight"/>
+      <input type="float" placeholder="Peripheral Pulse Increased" name="peripheral_pulse_increased"/>
+      <input type="float" placeholder="Peripheral Pulse Normal" name="peripheral_pulse_normal"/>
+      <input type="float" placeholder="Peripheral Pulse Reduced" name="peripheral_pulse_reduced"/>
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
