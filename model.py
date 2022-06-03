@@ -56,7 +56,6 @@ data2 = pd.get_dummies(data, columns =['surgery','age','capillary_refill_time','
                                       'peripheral_pulse','mucous_membrane','pain','peristalsis',
                                        'nasogastric_reflux','nasogastric_tube','rectal_exam_feces','abdomen'])
 data2.head()
-data2 = data2.replace({'outcome': {'lived': 1, 'died': 0, 'euthanized': np.nan}})
 data2 = data2.dropna(how = 'any', axis = 'rows')
 
 Selected_features = ['rectal_temp', 'pulse', 'respiratory_rate', 'packed_cell_volume', 'total_protein', 
