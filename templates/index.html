@@ -16,11 +16,8 @@
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-    	<input type="text" name="rectal_temp" placeholder="rectal_temp" required="required" />
-      <input type="text" name="pulse" placeholder="Pulse" required="required" />
       <input type="text" name="Surgery" placeholder="Surgery" required="required" />
       <input type="text" name="Age" placeholder="Age" required="required" />
-
       <input type="text" placeholder="Hospital Number" name="hospital_number" required="required" />
       <input type="text" placeholder="Rectal Temperature" name="rectal_temp" required="required" />
       <input type="text" placeholder="Pulse" name="pulse" required="required" />
@@ -30,24 +27,19 @@
       <input type="text" placeholder="Mucos Membrane" name="mucous_membrane" required="required" />
       <input type="text" placeholder="Capillary Refill Time" name="capillary_refill_time" required="required" />
       <input type="text" placeholder="Pain" name="pain" required="required" />
-
       <input type="text" placeholder="Peristalsis" name="peristalsis" required="required" />
       <input type="text" placeholder="Abdominal Distention" name="abdominal_distention" required="required" />
       <input type="text" placeholder="Nasogastric Tube" name="nasogastric_tube" required="required" />
-
       <input type="text" placeholder="Nasogastric Reflux" name="nasogastric_reflux" required="required" />
       <input type="text" placeholder="Nasogastric Reflux PH" name="nasogastric_reflux_ph" required="required" />
       <input type="text" placeholder="Rectal Exam Feces" name="rectal_exam_feces" required="required" />
-
       <input type="text" placeholder="Packed Cell Volume" name="packed_cell_volume" required="required" />
       <input type="text" placeholder="Total Protein" name="total_protein" required="required" />
       <input type="text" placeholder="Abdomo Appearance" name="abdomo_appearance" required="required" />
       <input type="text" placeholder="Abdomo Protein" name="abdomo_protein" required="required" />
-
       <input type="text" placeholder="Surgical Lesion" name="surgical_lesion" required="required" />
       <input type="text" placeholder="Lesion 2" name="lesion_1" required="required" />
       <input type="text" placeholder="Lesion 2" name="lesion_2" required="required" />
-
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
