@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <title>Horse Colic - Cloud Computing Big Task</title>
+  <link href='https://fonts.googleapis.com/css?family=Pacifico' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Arimo' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Hind:300' rel='stylesheet' type='text/css'>
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans+Condensed:300' rel='stylesheet' type='text/css'>
+  
+</head>
+
+<body>
+ <div class="login">
+	<h1>Horse Colic Prediction Index 2</h1>
+
+     <!-- Main Input For Receiving Query to our ML -->
+    <form action="{{ url_for('predict')}}"method="post">
+      <input type="text" placeholder="Surgery" name="surgery" required="required" />
+      <input type="text" placeholder="Age" placeholder="age" required="required" />
+      <input type="text" placeholder="Capillary Refill Time" name="capillary_refill_time" required="required" />
+      <input type="text" placeholder="Surgical Lesion" name="surgical_lesion" required="required" />
+      <input type="text" placeholder="Cp Data" name="cp_data" required="required" />
+      <input type="text" placeholder="Abdominal Distention" name="abdominal_distention" required="required" />
+      <input type="text" placeholder="Temp of Extremities" name="temp_of_extremities" required="required" />
+      <input type="text" placeholder="Peripheral Pulse" name="peripheral_pulse" required="required" />
+      <input type="text" placeholder="Mucos Membrane" name="mucous_membrane" required="required" />
+      <input type="text" placeholder="Pain" name="pain" required="required" />
+      <input type="text" placeholder="Peristalsis" name="peristalsis" required="required" />
+      <input type="text" placeholder="Nasogastric Reflux" name="nasogastric_reflux" required="required" />
+      <input type="text" placeholder="Nasogastric Tube" name="nasogastric_tube" required="required" />
+      <input type="text" placeholder="Rectal Exam Feces" name="rectal_exam_feces" required="required" />
+      <input type="text" placeholder="Abdomen" name="abdomen" required="required" />
+
+
+        <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
+    </form>
+
+   <br>
+   <br>
+   {{ prediction_text }}
+
+ </div>
+
+
+</body>
+</html>
