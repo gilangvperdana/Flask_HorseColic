@@ -18,22 +18,36 @@
     <form action="{{ url_for('predict')}}"method="post">
     	<input type="text" name="rectal_temp" placeholder="rectal_temp" required="required" />
         <input type="text" name="pulse" placeholder="pulse" required="required" />
-		<input type="text" name="respiratory_rate" placeholder="respiratory_rate" required="required" />
-		<input type="text" name="packed_cell_volume" placeholder="packed_cell_volume" required="required" />
+		<input type="text" name="Surgery" placeholder="Surgery" required="required" />
+		<input type="text" name="Age" placeholder="Age" required="required" />
 
-    <input type="text" name="total_protein" placeholder="total_protein" required="required" />
-    <input type="text" name="surgery_no" placeholder="surgery_no" required="required" />
-    <input type="text" name="surgery_yes" placeholder="surgery_yes" required="required" />
-    <input type="text" name="age_adult" placeholder="age_adult" required="required" />
-    <input type="text" name="age_young" placeholder="age_young" required="required" />
-    <input type="text" name="abdominal_distention_moderate" placeholder="abdominal_distention_moderate" required="required" />
-    <input type="text" name="abdominal_distention_none" placeholder="abdominal_distention_none" required="required" />
-    <input type="text" name="abdominal_distention_severe" placeholder="abdominal_distention_severe" required="required" />
-    <input type="text" name="abdominal_distention_slight" placeholder="abdominal_distention_slight" required="required" />
+    <input type="text" name="Hospital Number" placeholder="hospital_number" required="required" />
+    <input type="text" name="Rectal Temperature" placeholder="rectal_temp" required="required" />
+    <input type="text" name="Pulse" placeholder="pulse" required="required" />
+    <input type="text" name="Respiratory Rate" placeholder="respiratory_rate" required="required" />
+    <input type="text" name="Temp of Extremities" placeholder="temp_of_extremities" required="required" />
+    <input type="text" name="Peripheral Pulse" placeholder="peripheral_pulse" required="required" />
+    <input type="text" name="Mucos Membrane" placeholder="mucous_membrane" required="required" />
+    <input type="text" name="Capillary Refill Time" placeholder="capillary_refill_time" required="required" />
+    <input type="text" name="Pain" placeholder="pain" required="required" />
 
-    <input type="text" name="peripheral_pulse_increased" placeholder="peripheral_pulse_increased" required="required" />
-    <input type="text" name="peripheral_pulse_normal" placeholder="peripheral_pulse_normal" required="required" />
-    <input type="text" name="peripheral_pulse_reduced" placeholder="peripheral_pulse_reduced" required="required" />
+    <input type="text" name="Peristalsis" placeholder="peristalsis" required="required" />
+    <input type="text" name="Abdominal Distention" placeholder="abdominal_distention" required="required" />
+    <input type="text" name="Nasogastric Tube" placeholder="nasogastric_tube" required="required" />
+
+    <input type="text" name="Nasogastric Reflux" placeholder="nasogastric_reflux" required="required" />
+    <input type="text" name="Nasogastric Reflux PH" placeholder="nasogastric_reflux_ph" required="required" />
+    <input type="text" name="Rectal Exam Feces" placeholder="rectal_exam_feces" required="required" />
+
+    <input type="text" name="Packed Cell Volume" placeholder="packed_cell_volume" required="required" />
+    <input type="text" name="Total Protein" placeholder="total_protein" required="required" />
+    <input type="text" name="Abdomo Appearance" placeholder="abdomo_appearance" required="required" />
+    <input type="text" name="Abdomo Protein" placeholder="abdomo_protein" required="required" />
+
+    <input type="text" name="Surgical Lesion" placeholder="surgical_lesion" required="required" />
+    <input type="text" name="Lesion 2" placeholder="lesion_1" required="required" />
+    <input type="text" name="Lesion 2" placeholder="lesion_2" required="required" />
+
 
         <button type="submit" class="btn btn-primary btn-block btn-large">Predict</button>
     </form>
