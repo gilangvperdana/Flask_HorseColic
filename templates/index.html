@@ -17,7 +17,7 @@
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
       <input type="float" placeholder="Rectal Temp" name="rectal_temp" required="required" />
-      <input type="float" placeholder="Pulse" placeholder="pulse" required="required" />
+      <input type="float" placeholder="Pulse" name="pulse" required="required" />
       <input type="float" placeholder="Respiratory Rate" name="respiratory_rate" required="required" />
       <input type="float" placeholder="Packed Cell Volume" name="packed_cell_volume" required="required" />
       <input type="float" placeholder="Total Protein" name="total_protein" required="required" />
