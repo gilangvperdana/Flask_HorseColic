@@ -4,7 +4,7 @@ import pickle
 
 # Create flask app
 flask_app = Flask(__name__)
-model = pickle.load(open("model_GaussianNB_NEW.pkl", "rb"))
+model = pickle.load(open("RandomForestClassifier_NEW.pkl", "rb"))
 
 def convert_to_str(word):
     word_dict = {0: 'died', 1: 'lived'}
