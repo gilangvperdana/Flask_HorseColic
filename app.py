@@ -6,6 +6,10 @@ import pickle
 flask_app = Flask(__name__)
 model = pickle.load(open("model_GaussianNB_NEW.pkl", "rb"))
 
+def convert_to_str(word):
+    word_dict = {0: 'died', 1: 'lived'}
+    return word_dict[word]
+
 @flask_app.route("/")
 def Home():
     return render_template("index.html")
@@ -15,7 +19,8 @@ def predict():
     float_features = [float(x) for x in request.form.values()]
     features = [np.array(float_features)]
     prediction = model.predict(features)
-    return render_template("index.html", prediction_text = "The Colic Horse is {}".format(prediction))
+    output = convert_to_str(prediction[0])
+    return render_template("index.html", prediction_text = "The Horse is {}".format(output))
 
 if __name__ == "__main__":
     flask_app.run(debug=True)
